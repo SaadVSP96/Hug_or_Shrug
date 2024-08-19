@@ -1,5 +1,16 @@
 :root {
     --color-body: #272727;
+    --color-white: #ffffff;
+    --color-blue: #0e67f5;
+    --color-dark-blue: #184bc8;
+    --color-light-blue: #609dff;
+    --color-red: #ff2e2e;
+    --color-dark-red: #eb0f0f;
+    --color-orange: #ffa500;
+    --color-pink: #ff7df2;
+    --color-purple: #c100c5;
+    --color-green: #93ff8a;
+    --color-tomato: #ff6969;
 }
 
 *,
@@ -41,6 +52,11 @@ p {
     font-size: 2rem; /* say the p is for shit in the boxes against icons or basically the smaller font stuff*/
 }
 
+a {
+    text-decoration: none;
+    color: var(--color-body);
+}
+
 @media screen and (max-width: 768px) {
     /* detected font weights (mobile version) -> 300, 400, 500, 700, */
     body {
@@ -61,4 +77,67 @@ p {
     p {
         font-size: 1.2rem;
     }
+}
+
+/* Buttons */
+.btn {
+    height: 5rem;
+    width: 10rem;
+    padding: 0;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.btn--add {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    border: none;
+}
+.btn--add::after {
+    content: " +";
+    font-size: 2.6rem;
+}
+
+/* Navigation Bar */
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav__list {
+    list-style: none;
+    padding-left: 0;
+    flex-grow: 0.5;
+    flex-shrink: 0.5;
+}
+
+.nav__list .nav__item {
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+.nav__user {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.nav__login {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__img {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+}
+
+.user__arrow {
+    font-size: small;
+    color: black;
 }
