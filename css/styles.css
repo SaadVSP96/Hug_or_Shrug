@@ -98,12 +98,18 @@ a {
     font-size: 2.6rem;
 }
 
+.btn--search {
+    background-color: transparent;
+    border: none;
+}
+
 /* Navigation Bar */
 .nav {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    padding: 1.5rem;
 }
 
 .nav__list {
@@ -121,7 +127,7 @@ a {
 .nav__user {
     display: flex;
     flex-direction: row;
-    gap: 3rem;
+    column-gap: 3rem;
 }
 
 .nav__login {
@@ -140,4 +146,160 @@ a {
 .user__arrow {
     font-size: small;
     color: black;
+}
+
+/* Hero */
+.hero {
+    background-image: url("../images/banner_back_ground.png");
+    height: 80rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.hero__image {
+    position: absolute;
+}
+
+.hero__image--like {
+    width: 46rem;
+    height: 46rem;
+    top: 18rem;
+    left: 0rem;
+}
+
+.hero__image--dislike {
+    width: 42rem;
+    height: 42rem;
+    top: 0rem;
+    left: 104rem;
+}
+
+.hero__circle {
+    border-radius: 50%;
+    position: absolute;
+}
+
+.hero__triangle {
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.circle--blue--1 {
+    background-color: var(--color-dark-blue);
+    width: 49rem;
+    height: 49rem;
+    top: 17rem;
+    left: -25rem;
+}
+
+.circle--blue--2 {
+    background-color: var(--color-dark-blue);
+    width: 20rem;
+    height: 20rem;
+    top: 0rem;
+    left: 61rem;
+}
+
+.triangle--blue--1 {
+    transform: rotate(45deg);
+    border-left: 7rem solid transparent;
+    border-right: 7rem solid transparent;
+    border-bottom: 13rem solid var(--color-dark-blue);
+    top: 38rem;
+    left: 38rem;
+}
+
+.triangle--red--1 {
+    transform: rotate(-90deg);
+    border-left: 7rem solid transparent;
+    border-right: 7rem solid transparent;
+    border-bottom: 13rem solid var(--color-dark-red);
+    top: 10rem;
+    left: 100rem;
+}
+
+.circle--red--1 {
+    background-color: var(--color-dark-red);
+    width: 12rem;
+    height: 12rem;
+    top: 61rem;
+    left: 67rem;
+}
+
+.circle--red--2 {
+    background-color: var(--color-dark-red);
+    width: 27rem;
+    height: 27rem;
+    top: 39rem;
+    left: 135rem;
+}
+
+.hero__text1 {
+    font-weight: 700;
+    font-size: 15rem;
+    color: var(--color-white);
+    position: absolute;
+    top: 5rem;
+    left: 18rem;
+    margin: 0;
+}
+
+.hero__text1::after {
+    content: "G";
+    color: var(--color-dark-red);
+}
+
+.hero__text2 {
+    font-weight: 700;
+    font-size: 15rem;
+    color: var(--color-white);
+    position: absolute;
+    top: 50rem;
+    left: 72rem;
+    margin: 0;
+}
+
+.hero__text2::after {
+    content: "G";
+    color: var(--color-dark-blue);
+}
+
+/* Search Bar */
+.search-bar-container {
+    max-width: 45rem;
+    border: 2px solid var(--color-white);
+    text-align: center;
+    border-radius: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.search-bar {
+    border: none;
+    background-color: transparent;
+    padding: 3rem 0 3rem 4rem;
+    color: var(--color-white);
+}
+
+.search-bar::placeholder {
+    color: var(--color-white);
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.btn--search .fa-search {
+    font-size: 3rem;
+    color: var(--color-white);
+    padding-right: 2rem;
+}
+
+/* This is to scale the background png appropraitely for larger screens */
+@media screen and (min-width: 1400px) {
+    .hero {
+        background-size: cover;
+    }
 }
