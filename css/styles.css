@@ -1,0 +1,64 @@
+:root {
+    --color-body: #272727;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+/* Typography */
+html {
+    font-size: 62.5%;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    /* detected font weights (desktop version) -> 300, 400, 500, 700, */
+    font-family: "Ubuntu", sans-serif;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: var(--color-body);
+}
+
+h1 {
+    font-size: 6rem; /* lets say this is for the biggest thing we dont know is in the site*/
+}
+
+h2 {
+    font-size: 3rem; /* lets say h2 is the white text in the colorful boxes*/
+}
+
+h3 {
+    font-size: 2.2rem; /* lets say h3 is for slightly important stuff like nav items and user names*/
+}
+
+p {
+    font-size: 2rem; /* say the p is for shit in the boxes against icons or basically the smaller font stuff*/
+}
+
+@media screen and (max-width: 768px) {
+    /* detected font weights (mobile version) -> 300, 400, 500, 700, */
+    body {
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        font-size: 6rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+}
