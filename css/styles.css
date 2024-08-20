@@ -354,3 +354,22 @@ a {
     margin-top: 5rem;
     text-align: center;
 }
+
+.users__container {
+    background-image: url(../images/users-backgorund.png);
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+    padding: 15rem 16rem;
+    height: 72rem;
+    margin: 5rem 0;
+}
+
+.users__container .selected {
+    align-self: self-end;
+}

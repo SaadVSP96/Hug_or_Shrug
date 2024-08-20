@@ -51,12 +51,12 @@
         </header>
 
         <section class="hero">
-            <div class="hero__circle circle--blue--1"></div>
+            <!-- <div class="hero__circle circle--blue--1"></div>
             <div class="hero__circle circle--blue--2"></div>
             <div class="hero__triangle triangle--blue--1"></div>
             <div class="hero__triangle triangle--red--1"></div>
             <div class="hero__circle circle--red--1"></div>
-            <div class="hero__circle circle--red--2"></div>
+            <div class="hero__circle circle--red--2"></div> -->
             <img
                 class="hero__image hero__image--like"
                 src="images/3d_like_facebook.png"
@@ -67,8 +67,8 @@
                 src="images/3d_dislike_buisnessman.png"
                 alt="3d dislike icon"
             />
-            <h1 class="hero__text1">HU</h1>
-            <h1 class="hero__text2">SHRU</h1>
+            <!-- <h1 class="hero__text1">HU</h1>
+            <h1 class="hero__text2">SHRU</h1> -->
             <div class="search-bar-container">
                 <input class="search-bar" type="text" placeholder="E-mail" />
                 <button class="btn btn--search">
@@ -80,87 +80,85 @@
         <section class="users">
             <div class="heading-block"><h2>USERS</h2></div>
 
-            <div class="user-element">
-                <img
-                    class="user__image"
-                    src="images/person_1.jpeg"
-                    alt="person 1 picture"
-                />
-                <p class="user__name">James Fred</p>
-                <div class="user__preference-record">
-                    <div class="user__likes">
-                        <i class="fa fa-thumbs-up"></i><span>9</span>
-                    </div>
-                    <div class="user__dislikes">
-                        <i class="fa fa-thumbs-down"></i><span>1</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="user-element">
-                <img
-                    class="user__image"
-                    src="images/person_2.jpeg"
-                    alt="person 1 picture"
-                />
-                <p class="user__name">Nick Falcon</p>
-                <div class="user__preference-record">
-                    <div class="user__likes">
-                        <i class="fa fa-thumbs-up"></i><span>0</span>
-                    </div>
-                    <div class="user__dislikes">
-                        <i class="fa fa-thumbs-down"></i><span>0</span>
+            <div class="users__container">
+                <div class="user-element">
+                    <img
+                        class="user__image"
+                        src="images/person_1.jpeg"
+                        alt="person 1 picture"
+                    />
+                    <p class="user__name">James Fred</p>
+                    <div class="user__preference-record">
+                        <div class="user__likes">
+                            <i class="fa fa-thumbs-up"></i><span>9</span>
+                        </div>
+                        <div class="user__dislikes">
+                            <i class="fa fa-thumbs-down"></i><span>1</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="user-element">
-                <img
-                    class="user__image"
-                    src="images/person_3.png"
-                    alt="person 1 picture"
-                />
-                <p class="user__name">Gustavo Curt</p>
-                <div class="user__preference-record">
-                    <div class="user__likes">
-                        <i class="fa fa-thumbs-up"></i><span>54</span>
-                    </div>
-                    <div class="user__dislikes">
-                        <i class="fa fa-thumbs-down"></i><span>1</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="user-element">
-                <img
-                    class="user__image"
-                    src="images/person_4.png"
-                    alt="person 1 picture"
-                />
-                <p class="user__name">Mark Great</p>
-                <div class="user__preference-record">
-                    <div class="user__likes">
-                        <i class="fa fa-thumbs-up"></i><span>11</span>
-                    </div>
-                    <div class="user__dislikes">
-                        <i class="fa fa-thumbs-down"></i><span>8</span>
+                <div class="user-element selected">
+                    <img
+                        class="user__image"
+                        src="images/person_2.jpeg"
+                        alt="person 1 picture"
+                    />
+                    <p class="user__name">Nick Falcon</p>
+                    <div class="user__preference-record">
+                        <div class="user__likes">
+                            <i class="fa fa-thumbs-up"></i><span>0</span>
+                        </div>
+                        <div class="user__dislikes">
+                            <i class="fa fa-thumbs-down"></i><span>0</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="user-element">
-                <img
-                    class="user__image"
-                    src="images/person_5.png"
-                    alt="person 1 picture"
-                />
-                <p class="user__name">Jesse Pinkman</p>
-                <div class="user__preference-record">
-                    <div class="user__likes">
-                        <i class="fa fa-thumbs-up"></i><span>1</span>
+                <div class="user-element">
+                    <img
+                        class="user__image"
+                        src="images/person_3.png"
+                        alt="person 1 picture"
+                    />
+                    <p class="user__name">Gustavo Curt</p>
+                    <div class="user__preference-record">
+                        <div class="user__likes">
+                            <i class="fa fa-thumbs-up"></i><span>54</span>
+                        </div>
+                        <div class="user__dislikes">
+                            <i class="fa fa-thumbs-down"></i><span>1</span>
+                        </div>
                     </div>
-                    <div class="user__dislikes">
-                        <i class="fa fa-thumbs-down"></i><span>4</span>
+                </div>
+                <div class="user-element selected">
+                    <img
+                        class="user__image"
+                        src="images/person_4.png"
+                        alt="person 1 picture"
+                    />
+                    <p class="user__name">Mark Great</p>
+                    <div class="user__preference-record">
+                        <div class="user__likes">
+                            <i class="fa fa-thumbs-up"></i><span>11</span>
+                        </div>
+                        <div class="user__dislikes">
+                            <i class="fa fa-thumbs-down"></i><span>8</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-element">
+                    <img
+                        class="user__image"
+                        src="images/person_5.png"
+                        alt="person 1 picture"
+                    />
+                    <p class="user__name">Jesse Pinkman</p>
+                    <div class="user__preference-record">
+                        <div class="user__likes">
+                            <i class="fa fa-thumbs-up"></i><span>1</span>
+                        </div>
+                        <div class="user__dislikes">
+                            <i class="fa fa-thumbs-down"></i><span>4</span>
+                        </div>
                     </div>
                 </div>
             </div>
