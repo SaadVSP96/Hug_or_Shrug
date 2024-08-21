@@ -428,6 +428,12 @@ a {
     left: 30px;
 }
 
+.user-opinion-statistic-container > .content-block--small-colored.additional-1 {
+    position: absolute;
+    top: -42px;
+    left: 211px;
+}
+
 .stat-preference-container {
     display: flex;
     justify-content: flex-start;
@@ -536,11 +542,19 @@ a {
     padding: 1rem 3rem;
     border-radius: 1rem;
     font-weight: 500;
+    color: var(--color-white);
 }
 
 .content-block--small-colored.orange {
-    color: var(--color-white);
     background-color: var(--color-orange);
+}
+
+.content-block--small-colored.light-blue {
+    background-color: var(--color-light-blue);
+}
+
+.content-block--small-colored.pink {
+    background-color: var(--color-pink);
 }
 
 /* Large Colored */
