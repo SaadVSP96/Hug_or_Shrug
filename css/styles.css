@@ -750,6 +750,203 @@ header.block.container {
     .users__container .selected {
         align-self: auto;
     }
+
+    /* Statistics*/
+    .statistics {
+        width: 95%;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* to adjust alignment along the vertical*/
+        /* justify-content: space-between; */
+    }
+
+    .likes-and-dislikes-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        margin-bottom: 4rem;
+    }
+
+    .user-opinion-statistic-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 2rem;
+        padding: 1rem 1.5rem;
+        position: relative;
+        width: 100%;
+        margin: 1.9rem auto;
+    }
+
+    .user-opinion-statistic-container.dislike {
+        border: 1px solid var(--color-dark-red);
+    }
+
+    .user-opinion-statistic-container.like {
+        border: 1px solid var(--color-dark-blue);
+    }
+
+    .user-opinion-statistic-container > .content-block--small-colored {
+        position: absolute;
+        top: -30px;
+        left: 30px;
+    }
+
+    .user-opinion-statistic-container
+        > .content-block--small-colored.additional-1 {
+        position: absolute;
+        top: -42px;
+        left: 211px;
+    }
+
+    .stat-preference-container {
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .stat-item-desc p {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    .stat-user-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .stat-user__image {
+        height: 3.5rem;
+        width: 3.5rem;
+        border-radius: 50%;
+    }
+
+    .stat-user__desc p {
+        font-weight: 300;
+        font-size: 1.2rem;
+    }
+
+    /* Thumbs */
+    .thumb-container {
+        display: inline-block;
+        font-size: 4rem;
+        height: 12rem;
+        width: 12rem;
+        border-radius: 50%;
+        line-height: 1.2;
+    }
+
+    .thumb-container.likes--container {
+        text-align: center;
+        border: 2rem solid var(--color-blue-green-hue);
+    }
+
+    .thumb-container.dislikes--container {
+        text-align: center;
+        border: 2rem solid var(--color-red-green-hue);
+        padding: 0.5rem 0 0 0;
+        line-height: 1;
+    }
+
+    .thumb-container p {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .thumb-container--small {
+        display: inline-block;
+        height: 2.5rem;
+        width: 2.5rem;
+        text-align: center;
+        line-height: unset;
+        border-radius: 50%;
+    }
+
+    .thumb-container--small.like {
+        border: 2px solid var(--color-dark-blue);
+    }
+
+    .thumb-container--small.dislike {
+        border: 2px solid var(--color-dark-red);
+        padding: 0.2rem 0 0 0;
+    }
+
+    .thumb-container--small i {
+        font-size: 1.3rem;
+    }
+
+    .fa-thumbs-up {
+        color: var(--color-dark-blue);
+    }
+
+    .fa-thumbs-down {
+        color: var(--color-dark-red);
+    }
+
+    /* Content Blocks */
+    .content-block {
+        display: inline-block;
+        text-align: center;
+    }
+
+    /* -> transparent w border color */
+    .content-block--transparent {
+        background-color: transparent;
+        width: unset;
+        height: unset;
+        min-width: 2.5rem;
+        min-height: 2.5rem;
+        border-radius: 1rem;
+    }
+
+    .content-block--transparent p {
+        display: none;
+    }
+
+    .content-block--transparent:after {
+        content: "\2B9A";
+        font-size: 2rem;
+    }
+
+    .content-block--transparent.dislike {
+        color: var(--color-dark-red);
+        border: 1px solid var(--color-dark-red);
+        line-height: unset;
+    }
+
+    .content-block--transparent.like {
+        color: var(--color-dark-blue);
+        border: 1px solid var(--color-dark-blue);
+        line-height: unset;
+    }
+
+    /* -> Small Colored */
+    .content-block--small-colored {
+        padding: 1rem 2rem;
+        border-radius: 1.5rem;
+        font-weight: 500;
+        color: var(--color-white);
+    }
+
+    .content-block--small-colored.orange {
+        background-color: var(--color-orange);
+    }
+
+    .content-block--small-colored.light-blue {
+        background-color: var(--color-light-blue);
+    }
+
+    .content-block--small-colored.pink {
+        background-color: var(--color-pink);
+    }
 }
 
 /* GAP GAP GAP:: */
