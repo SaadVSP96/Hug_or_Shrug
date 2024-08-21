@@ -586,7 +586,7 @@ header.block.container {
         position: relative;
     }
 
-    .collapsible__content {
+    .nav__user.collapsible__content {
         display: none;
     }
 
@@ -596,9 +596,8 @@ header.block.container {
     }
 
     .nav__list.collapsible__content {
-        display: none;
-        opacity: 0;
-        transition: opacity 1s;
+        height: auto;
+        opacity: 1;
     }
 
     .nav__list {
@@ -608,7 +607,10 @@ header.block.container {
         top: 10rem;
         z-index: 1;
         font-size: 1.5rem;
-        opacity: 1;
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+        transition: opacity 0.5s ease, height 0.5s ease;
     }
 }
 
