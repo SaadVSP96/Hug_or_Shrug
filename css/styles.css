@@ -577,7 +577,7 @@ header.block.container {
     font-weight: 300;
 }
 
-/* FOR MOBILE SCREENS -> BELOW 450px */
+/* FOR MOBILE SCREENS -> BELOW 768px */
 @media screen and (max-width: 768px) {
     /* Header */
     .nav {
@@ -611,6 +611,57 @@ header.block.container {
     .nav__list.collapsible__content {
         height: auto;
         opacity: 1;
+    }
+
+    /* Hero */
+    .hero {
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top;
+        position: relative;
+    }
+
+    /* Search Bar */
+    .search-bar-container {
+        width: 16rem;
+        height: 3.5rem;
+        border: 2px solid var(--color-white);
+        border-radius: 1rem;
+        position: absolute;
+        top: 10rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .search-bar {
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        color: var(--color-white);
+        max-width: 10rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .search-bar::placeholder {
+        color: var(--color-white);
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    .btn--search .fa-search {
+        font-size: 1.5rem;
+        color: var(--color-white);
+        padding-right: 0rem;
+    }
+
+    .btn--search {
+        height: unset;
+        width: unset;
     }
 }
 
