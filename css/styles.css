@@ -95,11 +95,6 @@ a {
     padding: var(--padding-vertical) 0rem;
 }
 
-/* .block--dark {
-    background: #000;
-    color: #7b858b;
-} */
-
 .container {
     max-width: 1440px;
     margin: 0 auto;
@@ -362,19 +357,21 @@ a {
     text-align: center;
 }
 
-.users__container {
+.users-background-wrapper {
     background-image: url(../images/users-backgorund.png);
     background-position: center;
     background-size: contain;
     width: 100%;
     background-repeat: repeat-x;
+}
+
+.users__container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: start;
     padding: 15rem 16rem;
     height: 72rem;
-    margin: 2rem 0;
 }
 
 .users__container .selected {
@@ -382,7 +379,6 @@ a {
 }
 
 /* Statistics*/
-
 .statistics {
     width: 67%;
     border: 1rem solid var(--color-blue-green-hue);
@@ -435,6 +431,7 @@ a {
 }
 
 .stat-preference-container {
+    width: 50%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
