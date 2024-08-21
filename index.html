@@ -26,17 +26,20 @@
     <body>
         <!-- pages required -> main + products + cart + checkout -->
         <header class="block container">
-            <nav class="nav">
+            <nav class="nav collapsible">
                 <a class="nav__brand" href="#"
                     ><img src="images/logo.png" alt="hug-or-shrug logo"
                 /></a>
-                <ul class="nav__list">
+                <ul class="nav__list hidden collapsible__content">
                     <li class="nav__item"><a href="#">Categories</a></li>
                     <li class="nav__item"><a href="#">Users</a></li>
                     <li class="nav__item"><a href="#">Hugs</a></li>
                     <li class="nav__item"><a href="#">Shrugs</a></li>
                 </ul>
-                <div class="nav__user">
+                <div class="nav__toggler">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <div class="nav__user collapsible__content">
                     <button class="btn btn--add nav__btn">ADD</button>
                     <div class="nav__login">
                         <img
@@ -50,7 +53,7 @@
             </nav>
         </header>
 
-        <section class="hero">
+        <!-- <section class="hero">
             <h1 class="hero__text1">HU</h1>
             <h1 class="hero__text2">SHRU</h1>
             <div class="search-bar-container">
@@ -59,8 +62,8 @@
                     <i class="fa fa-search"></i>
                 </button>
             </div>
-        </section>
-
+        </section> -->
+        <!-- 
         <section class="users block">
             <div class="heading-block"><h2>USERS</h2></div>
 
@@ -401,8 +404,9 @@
             <div class="footer__trademark">
                 <p>© HugOrShrug 2024</p>
             </div>
-        </footer>
+        </footer> -->
 
         <section class="gap"></section>
+        <script src="js/main.js"></script>
     </body>
 </html>
