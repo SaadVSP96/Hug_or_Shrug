@@ -171,7 +171,7 @@ a {
     text-align: center;
     border-radius: 1rem;
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -195,7 +195,12 @@ a {
     padding-right: 2rem;
 }
 
-/* Navigation Bar */
+/* Header */
+
+header.block.container {
+    padding: 2rem 0;
+}
+
 .nav {
     display: flex;
     flex-direction: row;
@@ -241,88 +246,13 @@ a {
 
 /* Hero */
 .hero {
-    background-image: url("../images/banner_back_ground.png");
-    height: calc(120vh - 114px);
+    background-image: url("../images/banner.png");
+    height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     position: relative;
-}
-
-.hero__image--like {
-    width: 46rem;
-    height: 46rem;
-    top: 18rem;
-    left: 0rem;
-}
-
-.hero__image--dislike {
-    width: 42rem;
-    height: 42rem;
-    top: 0rem;
-    left: 104rem;
-}
-
-.hero__circle {
-    border-radius: 50%;
-    position: absolute;
-}
-
-.hero__triangle {
-    width: 0;
-    height: 0;
-    position: absolute;
-}
-
-.circle--blue--1 {
-    background-color: var(--color-dark-blue);
-    width: 49rem;
-    height: 49rem;
-    top: 17rem;
-    left: -25rem;
-}
-
-.circle--blue--2 {
-    background-color: var(--color-dark-blue);
-    width: 20rem;
-    height: 20rem;
-    top: 0rem;
-    left: 61rem;
-}
-
-.triangle--blue--1 {
-    transform: rotate(45deg);
-    border-left: 7rem solid transparent;
-    border-right: 7rem solid transparent;
-    border-bottom: 13rem solid var(--color-dark-blue);
-    top: 38rem;
-    left: 38rem;
-}
-
-.triangle--red--1 {
-    transform: rotate(-90deg);
-    border-left: 7rem solid transparent;
-    border-right: 7rem solid transparent;
-    border-bottom: 13rem solid var(--color-dark-red);
-    top: 10rem;
-    left: 100rem;
-}
-
-.circle--red--1 {
-    background-color: var(--color-dark-red);
-    width: 12rem;
-    height: 12rem;
-    top: 61rem;
-    left: 67rem;
-}
-
-.circle--red--2 {
-    background-color: var(--color-dark-red);
-    width: 27rem;
-    height: 27rem;
-    top: 39rem;
-    left: 135rem;
 }
 
 .hero__text1 {
