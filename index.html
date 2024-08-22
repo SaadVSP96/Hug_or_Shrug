@@ -26,7 +26,7 @@
     <body>
         <!-- pages required -> main + products + cart + checkout -->
         <header class="block container">
-            <nav class="nav">
+            <nav class="nav collapsible">
                 <a class="nav__brand" href="#"
                     ><img src="images/logo.png" alt="hug-or-shrug logo"
                 /></a>
@@ -36,7 +36,10 @@
                     <li class="nav__item"><a href="#">Hugs</a></li>
                     <li class="nav__item"><a href="#">Shrugs</a></li>
                 </ul>
-                <div class="nav__user">
+                <div class="nav__toggler">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <div class="nav__user collapsible__content">
                     <button class="btn btn--add nav__btn">ADD</button>
                     <div class="nav__login">
                         <img
@@ -51,8 +54,13 @@
         </header>
 
         <section class="hero">
+<<<<<<< HEAD
             <h1 class="hero__text1">HU</h1>
             <h1 class="hero__text2">SHRU</h1>
+=======
+            <!-- <h1 class="hero__text1">HU</h1>
+            <h1 class="hero__text2">SHRU</h1> -->
+>>>>>>> Main_page_Mobile_Version_below_768px
             <div class="search-bar-container">
                 <input class="search-bar" type="text" placeholder="E-mail" />
                 <button class="btn btn--search">
@@ -63,7 +71,6 @@
 
         <section class="users block">
             <div class="heading-block"><h2>USERS</h2></div>
-
             <div class="users-background-wrapper">
                 <div class="users__container container">
                     <div class="user-element">
@@ -184,6 +191,7 @@
                     <p class="stat-content">General</p>
                 </div>
             </div>
+
             <div class="user-opinion-statistic-container dislike">
                 <div class="stat-preference-container">
                     <div class="thumb-container--small dislike">
@@ -392,10 +400,10 @@
                 <a class="nav__brand" href="#"
                     ><img src="images/logo.png" alt="hug-or-shrug logo"
                 /></a>
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#">Contact Us</a></li>
-                    <li class="nav__item"><a href="#">About Us</a></li>
-                    <li class="nav__item"><a href="#">Blogs</a></li>
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#">Contact Us</a></li>
+                    <li class="footer__item"><a href="#">About Us</a></li>
+                    <li class="footer__item"><a href="#">Blogs</a></li>
                 </ul>
             </div>
             <div class="footer__trademark">
@@ -404,5 +412,6 @@
         </footer>
 
         <section class="gap"></section>
+        <script src="js/main.js"></script>
     </body>
 </html>
