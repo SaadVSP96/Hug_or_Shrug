@@ -947,6 +947,32 @@ header.block.container {
     .content-block--small-colored.pink {
         background-color: var(--color-pink);
     }
+
+    /* -> Large Colored */
+    .content-block--large-colored {
+        padding: 1rem 1rem;
+        border-radius: 2rem;
+        font-weight: 500;
+        font-size: 2rem;
+        color: var(--color-white);
+    }
+
+    /* Categories */
+    .categories {
+        background-color: var(--color-blue-green-hue);
+        margin-top: 0;
+        padding: 5rem 0;
+    }
+
+    .category-container {
+        padding: 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        row-gap: 1.5rem;
+        column-gap: 1rem;
+        justify-content: center;
+    }
 }
 
 /* GAP GAP GAP:: */
