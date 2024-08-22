@@ -149,10 +149,9 @@ a {
     text-align: center;
     border-radius: 1rem;
     position: absolute;
-    top: 45%;
+    top: 24vw;
     left: 50%;
     transform: translate(-50%, -50%);
-
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -233,11 +232,11 @@ header.block.container {
 /* Hero */
 .hero {
     background-image: url("../images/banner.png");
-    height: 100vh;
-    width: 100%;
+    width: 100vw;
+    height: 57vw;
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;
+    background-position: top;
     position: relative;
 }
 
@@ -246,8 +245,8 @@ header.block.container {
     font-size: 15rem;
     color: var(--color-white);
     position: absolute;
-    top: 5rem;
-    left: 18rem;
+    top: 2vw;
+    left: 14vw;
     margin: 0;
 }
 
@@ -261,8 +260,8 @@ header.block.container {
     font-size: 15rem;
     color: var(--color-white);
     position: absolute;
-    top: 50rem;
-    left: 72rem;
+    top: 30vw;
+    right: 14vw;
     margin: 0;
 }
 
@@ -623,9 +622,9 @@ header.block.container {
 
     /* Search Bar */
     .search-bar-container {
-        width: 16rem;
-        height: 3.5rem;
-        top: 10rem;
+        width: 23rem;
+        height: 5rem;
+        top: 24vw;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -637,11 +636,11 @@ header.block.container {
     }
 
     .search-bar::placeholder {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .btn--search .fa-search {
-        font-size: 1.5rem;
+        font-size: 2rem;
         padding-right: 0rem;
     }
 
@@ -689,12 +688,42 @@ header.block.container {
 
     /* Hero */
     .hero {
-        width: 100%;
-        height: 36vh;
+        width: 100vw;
+        height: 57vw;
         background-repeat: no-repeat;
         background-size: contain;
         background-position: top;
         position: relative;
+    }
+
+    .hero__text1 {
+        font-weight: 700;
+        font-size: 8rem;
+        color: var(--color-white);
+        position: absolute;
+        top: 1vw;
+        left: 14vw;
+        margin: 0;
+    }
+
+    .hero__text1::after {
+        content: "G";
+        color: var(--color-dark-red);
+    }
+
+    .hero__text2 {
+        font-weight: 700;
+        font-size: 8rem;
+        color: var(--color-white);
+        position: absolute;
+        top: 31vw;
+        right: 13vw;
+        margin: 0;
+    }
+
+    .hero__text2::after {
+        content: "G";
+        color: var(--color-dark-blue);
     }
 
     /* Users */
@@ -909,6 +938,64 @@ header.block.container {
         margin-right: 5rem;
         font-size: 1.2rem;
         font-weight: 300;
+    }
+}
+
+/* Uptil now, most of the CSS caters to styling the whole website
+ below  and above tablet width, i.e., 768px. Unfortuately we have two 
+ sections with backgrounds that are not scaling appropriately. 
+ To counter the issue, the following media queries are now being made 
+ starting from  400px and below to ----*/
+
+/* FOR SCREENS BELOW 400px */
+@media screen and (max-width: 400px) {
+    /* Search Bar */
+    .search-bar-container {
+        width: 16rem;
+        height: 3.5rem;
+        top: 24vw;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* Hero */
+    .hero {
+        width: 100vw;
+        height: 57vw;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top;
+        position: relative;
+    }
+
+    .hero__text1 {
+        font-weight: 700;
+        font-size: 3.5rem;
+        color: var(--color-white);
+        position: absolute;
+        top: 0vw;
+        left: 13vw;
+        margin: 0;
+    }
+
+    .hero__text1::after {
+        content: "G";
+        color: var(--color-dark-red);
+    }
+
+    .hero__text2 {
+        font-weight: 700;
+        font-size: 3.5rem;
+        color: var(--color-white);
+        position: absolute;
+        top: 32vw;
+        right: 18vw;
+        margin: 0;
+    }
+
+    .hero__text2::after {
+        content: "G";
+        color: var(--color-dark-blue);
     }
 }
 
