@@ -229,6 +229,12 @@ header.block.container {
     display: none;
 }
 
+nav li a:hover,
+nav li a.active {
+    color: var(--color-blue);
+    text-decoration: underline;
+}
+
 /* Hero */
 .hero {
     background-image: url("../images/banner.png");
@@ -560,7 +566,9 @@ header.block.container {
     font-weight: 300;
 }
 
-/* FOR MOBILE SCREENS -> BELOW 768px */
+/* PRODUCTS PAGE */
+
+/* FOR TABLET SCREENS -> BELOW 768px */
 @media screen and (max-width: 768px) {
     /* detected font weights (mobile version) -> 300, 400, 500, 700, */
     body {
@@ -947,7 +955,7 @@ header.block.container {
  To counter the issue, the following media queries are now being made 
  starting from  400px and below to ----*/
 
-/* FOR SCREENS BELOW 400px */
+/* FOR MOBILE SCREENS BELOW 400px */
 @media screen and (max-width: 400px) {
     /* Search Bar */
     .search-bar-container {
