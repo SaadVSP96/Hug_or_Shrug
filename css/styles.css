@@ -61,6 +61,16 @@ h3 {
     font-size: 2.2rem; /* lets say h3 is for slightly important stuff like nav items and user names*/
 }
 
+h4 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+h5 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
 p {
     font-size: 2rem; /* say the p is for shit in the boxes against icons or basically the smaller font stuff*/
 }
@@ -72,7 +82,7 @@ a {
 
 /* Blocks */
 .block {
-    --padding-vertical: 5rem;
+    --padding-vertical: 3rem;
     padding: var(--padding-vertical) 0rem;
 }
 
@@ -567,6 +577,67 @@ nav li a.active {
 }
 
 /* PRODUCTS PAGE */
+.products {
+    text-align: center;
+}
+
+.products .products-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 3rem;
+}
+
+.products .prod {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+.products .prod:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+.products .prod img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.products .prod .desc {
+    text-align: start;
+    padding: 10px 0;
+}
+
+.products .prod .desc h5 {
+    padding-top: 7px;
+    color: #1a1a1a;
+}
+
+.products .prod .desc i {
+    color: rgb(243, 181, 25);
+}
+
+.products .prod .desc .cart {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    color: var(--color-body);
+    background-color: #e8f6ea;
+    text-align: center;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
 
 /* FOR TABLET SCREENS -> BELOW 768px */
 @media screen and (max-width: 768px) {
