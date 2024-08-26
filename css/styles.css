@@ -152,6 +152,25 @@ a {
     margin: 0 1rem;
 }
 
+.user-element--extended {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 4px solid var(--color-blue-green-hue);
+    padding: 2rem 6rem;
+    border-radius: 2rem;
+    margin: 2.5rem 0;
+}
+
+.user-element--extended .user-actions {
+    padding-left: 5rem;
+}
+
+.user-element--extended .user-actions span {
+    padding: 0 0.5rem;
+    display: inline-block;
+}
+
 /* Search Bar */
 .search-bar-container {
     max-width: 45rem;
@@ -190,6 +209,12 @@ a {
 /* Header */
 header.block.container {
     padding: 2rem 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: var(--color-white);
 }
 
 .nav {
@@ -639,6 +664,17 @@ nav li a.active {
     right: 10px;
 }
 
+/* USERS PAGE */
+
+.users--container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+    padding: 5rem 8rem;
+}
+
 /* FOR TABLET SCREENS -> BELOW 768px */
 @media screen and (max-width: 768px) {
     /* detected font weights (mobile version) -> 300, 400, 500, 700, */
@@ -1015,6 +1051,19 @@ nav li a.active {
     }
 
     /* PRODUCTS PAGE */
+
+    /* USERS PAGE */
+    .users--container {
+        padding: 5rem 3rem;
+    }
+
+    .user-element--extended {
+        padding: 0.5rem 2rem;
+    }
+
+    .user-element--extended .user-actions {
+        padding-left: 2rem;
+    }
 }
 
 /* Uptil now, most of the CSS caters to styling the whole website
@@ -1075,6 +1124,33 @@ nav li a.active {
     }
 
     /* PRODUCTS PAGE */
+
+    /* USERS PAGE */
+
+    .users--container {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 2rem 1rem;
+    }
+
+    .users--container .user__name {
+        font-size: 2rem;
+    }
+
+    .users--container .fa {
+        font-size: 2rem;
+    }
+
+    .users--container span {
+        font-size: 2rem;
+    }
+
+    .user__image {
+        height: 6rem;
+        width: 6rem;
+        border: 0.5rem solid var(--color-white);
+    }
 }
 
 /* GAP GAP GAP:: */
