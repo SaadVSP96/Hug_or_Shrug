@@ -667,11 +667,6 @@ nav li a.active {
         padding: var(--padding-vertical) 0rem;
     }
 
-    /* .container {
-        max-width: 1440px;
-        margin: 0 auto;
-    } */
-
     /* Heading Blocks */
     .heading-block {
         border: 3px solid var(--color-blue-green-hue);
@@ -1018,6 +1013,8 @@ nav li a.active {
         font-size: 1.2rem;
         font-weight: 300;
     }
+
+    /* PRODUCTS PAGE */
 }
 
 /* Uptil now, most of the CSS caters to styling the whole website
@@ -1076,6 +1073,8 @@ nav li a.active {
         content: "G";
         color: var(--color-dark-blue);
     }
+
+    /* PRODUCTS PAGE */
 }
 
 /* GAP GAP GAP:: */
